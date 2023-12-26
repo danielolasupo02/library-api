@@ -1,5 +1,5 @@
 FROM maven:3.8.4-openjdk-17
-ARGS build
+ARG build
 COPY . .
 RUN mvn clean package -DskipTests
 
